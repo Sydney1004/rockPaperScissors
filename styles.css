@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #FFD1DC;
+}
+
+header {
+    font-family: Chalkduster, fantasy;
+    text-shadow: 1px 1px 0 pink, 2px 2px 3px rgb(98, 11, 41);
+    font-size: 48px;
+    color: #E75480;
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    padding: 40px;
+}
+
+#game_info {
+    font-family: Marker Felt, fantasy;
+    font-size: 40px;
+    color: #E75480;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#game_info p {
+    border: 5px solid #E75480; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffe6f7;
+}
+
+.score {
+    margin-top: 40px;
+    font-family: Marker Felt, fantasy;
+    color: #de5da3;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.player_side,
+.computer_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#player_score,
+#computer_score  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.player_choice img,
+.computer_choice img {
+    width: 150px;
+    height: 150px; 
+  }
+
+.choice img {
+    background-color: #ffe6f7;
+    width: 150px;
+    height: 150px; 
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+button {
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #de5da3;
+    border: 8px solid #de5da3;
+}
