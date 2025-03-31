@@ -46,24 +46,24 @@ function updateScore(userChoice, computerChoice){
 function updateSign(userChoice, computerChoice){
     switch (userChoice) {
         case 'rock':
-            document.getElementById('player_choice').src = '/img/rock.png';
+            document.getElementById('player_choice').src = 'img/rock.png';
             break;
         case 'paper':
-            document.getElementById('player_choice').src = '/img/paper.png';
+            document.getElementById('player_choice').src = 'img/paper.png';
             break;
         case 'scissors':
-            document.getElementById('player_choice').src = '/img/scissors.png';
+            document.getElementById('player_choice').src = 'img/scissors.png';
             break;
     }
     switch (computerChoice) {
         case 'rock':
-            document.getElementById('computer_choice').src = '/img/rock.png';
+            document.getElementById('computer_choice').src = 'img/rock.png';
             break;
         case 'paper':
-            document.getElementById('computer_choice').src = '/img/paper.png';
+            document.getElementById('computer_choice').src = 'img/paper.png';
             break;
         case 'scissors':
-            document.getElementById('computer_choice').src = '/img/scissors.png';
+            document.getElementById('computer_choice').src = 'img/scissors.png';
             break;
     }
 }
