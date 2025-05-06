@@ -41,6 +41,30 @@ function updateScore(userChoice, computerChoice){
         document.getElementById('computer_score').textContent = `Computer: ${currentScore}`;
         document.getElementById('info').textContent = "You lose!";
     }
+    // checking for result, who gets 5 points first win
+    checkResult()
+}
+
+function checkResult() {
+    const playerScoreText = document.getElementById('player_score').textContent;
+    const computerScoreText = document.getElementById('computer_score').textContent;
+
+    const playerScore = parseInt(playerScoreText.split(':')[1].trim());
+    const computerScore = parseInt(computerScoreText.split(':')[1].trim());
+
+    if (playerScore >= 5) {
+        document.getElementById('info').textContent = "🎉 You won the game!";
+        disableButtons();
+    } else if (computerScore >= 5) {
+        document.getElementById('info').textContent = "😢 Computer won the game!";
+        disableButtons();
+    }
+}
+
+function disableButtons() {
+    document.getElementById('rock_button').disabled = true;
+    document.getElementById('paper_button').disabled = true;
+    document.getElementById('scissors_button').disabled = true;
 }
 
 function updateSign(userChoice, computerChoice){
